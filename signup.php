@@ -11,25 +11,29 @@
    <?php  require 'partials/_nav.php' ?>
    <div class="container">
     <h1 class="text-center"> SignUp The Website </h1>
-          <form>
+          <form action="/loginsystem/signup.php" method="post">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Username</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="Username" class="form-label">Username</label>
+          <input type="email" class="form-control" id="Username" name="Username" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+          
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="cpassword" class="form-label">Confirm Password</label>
+          <input type="cpassword" class="form-control" id="cpassword" name="cpassword">
+          <div id="emailHelp" class="form-text">Make sure to type the same password.</div>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Forgot Password</label>
         </div>
+        <div class="d-grid gap-2 d-md-block">
         <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" value="reset" class="btn btn-danger">reset</button>
+        </div>
       </form>
 
    </div>
